@@ -224,6 +224,13 @@ public class IndexUnit {
 		}
 	}
 
+	/**
+	 * 使用tika生成文档对象（tika用于解析 各种格式的文档）
+	 * 
+	 * @param file
+	 * @return
+	 * @throws Exception
+	 */
 	private static Document generatorDoc(File file) throws Exception {
 
 		if (file.isDirectory()) {
@@ -243,6 +250,9 @@ public class IndexUnit {
 		return doc;
 	}
 
+	/**
+	 * 使用tika生成索引
+	 */
 	public void createMmsegIndexByTika() {
 		IndexWriter writer = null;
 
