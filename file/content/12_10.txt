@@ -1,0 +1,428 @@
+
+两万元顶级游戏PC 新蓝靓点9198评测_新蓝 靓点 9198（770）_台式电脑评测-中关村在线
+
+
+    　　如果你是一位游戏发烧友，一定会感慨：现在的新游戏对PC硬件的要求实在是太高了，几个月前才买的高端PC，在面对最新推出的大型3D游戏时，很可能已经感到力不从心了。与其反复升级各种配件，还不如一步到位：买一台目前的顶级PC，保证能够流畅运行3~5年内所有最新最炫的游戏。
+    　　如果您正有这样的打算，那么我们向您推荐一款很有性价比的顶级PC：新蓝靓点9198。当您看到它的硬件配置，就会明白我们为何说它“很有性价比”了：只需要19999元，您就能拥有Intel四核处理器QX6700、2GB DDR2-800双通道内存、500GB海量硬盘，以及无数玩家梦寐以求的NVIDIA GeForce 8800GTS独立显卡；最令人吃惊的是，它还搭配了一款超大尺寸的26英寸宽屏液晶电视！无论玩游戏、还是看大片，那种震撼的感受都是前所未有的。
+    顶级游戏PC：新蓝靓点9198
+    　　此外，靓点9198还可以作为您的家庭多媒体娱乐中心。一边上网、玩游戏，一边看电视，已经不再是遥不可及的梦想；通过内置的DVD刻录机，您还可以把喜欢的电视节目录制下来和朋友分享。此外，这款PC还采用了TP-Link无线网卡，最高传输速度可达108Mbps，因此您完全可以把它搬到客厅中使用，通过无线路由器接入互联网，通过遥控器点播喜爱的节目。
+    新蓝靓点9198 配置表
+    　　在对靓点9198的硬件性能进行测试之前，我们先来看看它在外观设计及易用性方面有哪些特点。
+    
+    · 26英寸液晶电视及键鼠
+    　　新蓝靓点9198提供了两种尺寸的液晶电视供消费者选择，它们的特点各异。其中26英寸液晶电视更适合用来播放DVD和从网络上下载的电影，玩游戏也没有任何问题，只是它的最佳分辨率为1024*768，不太适合在更高的分辨率下进行游戏。如果您比较看重游戏画面的精美程度，可以选择另一款22英寸液晶电视，它拥有DVI数字接口，最佳分辨率高达1680*1050，带给您无比精细的画面质量。
+    ?
+    ? 26英寸液晶电视各角度赏析（点击放大）
+    　　液晶电视的背面也提供了诸多丰富的接口，足以满足用户的各类需求。
+    背面接口十分丰富
+    　　靓点9198的键盘具有防水功能，键帽较软，手感舒适。它集成了“上网、邮件、软关机”三个快捷按键，操作起来还是很方便的。
+    手感舒适的防水键盘
+    　　鼠标的体型比较小巧，适合手型较小的用户，握在手里也很舒适，开机情况下它的滚轮还会发出蓝色的光芒，显得很炫酷。
+    小巧灵活的光电鼠标
+    　　下面我们来近距离欣赏一下靓点9198的主机部分。
+    
+    · 顶级配件的家：主机外观设计
+    　　靓点9198的机箱采用了银色与灰色想搭配的主色调，辅以蓝色的LED电源及硬盘指示灯，在黑暗中会显得格外炫丽。如果仅仅从机箱的个头来看，您或许很难想到它竟然内置了那么多的顶级配件。通过机箱的侧面的标签，我们看到这款产品还具有新蓝“智能驱动”和“一键恢复”技术，并且采用了华硕高端主板和航嘉顶级电源。
+    时尚、稳健的主机外观
+    　　前面板提供了两个光驱位，其中一个已经安装了一个20倍速的DVD刻录机，另一个则预留给用户日后升级使用。它们的下面是一个多功能读卡器（附带一个USB接口），用户可以方便实现PC与数码相机中、手机等设备的数据传输。
+    ? 光驱和读卡器　　　　　　　　　　按键和前置接口
+    　　在机箱左侧和底部，我们看到了大面积的散热孔，这些都保证了内部热量能够快速传导出来，从而保证系统的运行稳定。机箱顶部还有一个方便搬运的提手，用户一只手就可以将其“提”走。
+    ? 　充足的散热孔　　　　　　　　　　机箱顶部便携提手
+    　　背面的接口比普通PC要丰富的多。除了我们常见的PS/2、USB等接口外，还提供了eSATA、IEEE1394和六个音频I/O接口；8800GTS显卡拥有双DVI接口，为了便于连接26英寸液晶电视，其中一个DVI接口已经被装上了VGA转接头；在显卡下方，我们还看到了TP-Link无线网卡的天线。
+    丰富齐全的背面接口
+    　　起初，我们对这款机箱的散热能力表示了些许的担心，但当我们将侧面板取下看到里面的内部结构时，才终于恍然大悟...
+    
+    · 内部结构及主要配件赏析
+    　　原来，靓点9198搭配了一款直径为12厘米的超大尺寸CPU风扇，在带来强大散热能力的同时，还可以保持在比较低的转速下运行。通过在Everest中进行查看，我们发现在正常运行状态下，CPU、显卡、机箱风扇的转数都仅为1500rpm左右，这意味即使您在夜深人静的环境下使用这款PC，也很难听到风扇运转的声音。另外，它还采用了纯铜热导管散热片，进一步增强了散热能力。
+    12厘米大尺寸静音风扇
+    三款风扇的转数都仅为1500rpm左右
+    　　靓点9198搭配了两条V-DATA 1GB DDR2-800内存，时序5-5-5-18。
+    2GB DDR2-800双通道内存
+    　　电源方面，它采用了来自航嘉公司的“多核DH6”，符合最新ATX12V 2.2版本规格，额定功率为400W，是DIY市场也倍受欢迎。这款电源沿袭了航嘉产品的优良品质，采用12cm的大尺寸静音风扇进行散热，既能保证散热效果，又能减少噪音的产生。
+    额定功率为400W的电源（2.2版）
+    　　这款来自XFX的8800GTS显卡拥有640MB的大容量显存和320bit的显存位宽，核心/显存频率为513/1584MHz。此外，它还拥有96个统一着色引擎，支持Direct X 10，在后面的测试中，我们将会感受到它那令人恐怖的游戏性能。
+    
+    ? NVIDIA GeForce 8800GTS（640MB/320bit）
+    　　通过专业的硬件配置检测软件，我们可以更为深入地了解到这些配件的具体规格。
+    
+    · 硬件配置具体规格查看
+    　　靓点9198采用了Intel四核处理器QX6700，它的每颗核心都拥有2.66GHz的主频，每两颗核心共享4MB二级缓存，使得总容量高达8MB。有了这样一颗处理器，您完全可以同时做多件事，比如一边进行视频压缩，一边爽玩大型3D游戏。
+    CPU：Intel Core 2 Extreme QX6700
+    　　主板是由ASUS代工的，采用了G965芯片组，完全可以满足处理器的需要。
+    主板：ASUS P5B-VM（G965）
+    内存：V-DATA 2*1GB DDR2-800
+    　　两块容量为250GB的SATA-II硬盘来自Western Digital，总容量高达500GB，如果按照平均一部电影500MB来计算，这两块硬盘最多可以存放将近1000部电影。如果您对电脑比较熟悉，还可以将它们组成Raid 0，从而获得更快的硬盘传输速度。
+    硬盘：WDC 2*250GB SATA-II
+    　　通过下面的截图，您还可以对这片8800GTS显卡有更多的了解：
+    显卡：XFX GeForce 8800GTS 640MB
+    　　下面，我们就开始对靓点9198的整体性能展开测试。
+    
+    · 系统整体性能测试
+    　　PCMark05是Futuremark公司推出的性能测试软件，可以用来测试系统整体性能以及CPU、内存、磁盘和2D图形等子系统性能。它包含三个多任务测试项目（第一个项目是文件压缩和文件加密，第二个项目是文件解压缩和图像处理，第三个项目是扫描病毒和语法检查）以及Web页面处理、音频解码、视频解码等单线程测试项目。最终结果也是由各分项成绩加权而来的相对得分，数值越高说明系统的整体性能越出色。
+    PCmark05测试成绩：8380
+    　　3DMark03作为一款显卡测试软件，针对显卡提供了四个Game的测试。第一项测试为Wings of Fury这是一个基于DirectX7的测试，使用了vertex shaders 1.1。第二和第三项测试分别为Battle of Proxycon和Trolls Lair这两项测试是基于DirectX8的测试，使用了pixel shaders 1.4和vertex shaders 1.1。第四项测试为Mother Nature，这个场景基于PixelShaders2.0和Vertex Shader2.0引擎，真实的模拟出了大自然的美丽景色。
+    3Dmark03测试成绩：29984
+    　　3DMark05加入了对微软directx 9.0C的支持，所以完全支持Shader Model。同时加入的更加详细显示控制面板，可以使用户对测试进行更为详细的画面控制。3DMark05还使用了全新的更为类似游戏的3D引擎，使测试更接近于正常的游戏运行。它包含了三个全新的测试场景，分别为：Return to Proxycon、Firefly Forest、Canyon Flight，通过这三个场景的测试便可以得出分数。
+    3Dmark05测试成绩：14181
+    　　3DMark06主要使用最新一代游戏技术衡量DirectX 9级别的3D硬件。此前的3DMark都是随着新版DirectX和新一代硬件的发布而推出，在一定程度上限制了3DMark对最新硬件性能的充分挖掘。现在，DirectX 9已经发布3年，该级别的硬件已经遍布高中低各个领域，因此3DMark06可以完全利用DirectX 9的特性。事实上，3DMark06所有测试都需要支持SM3.0的DirectX 9硬件，不过只支持SM2.x的硬件也可以运行大部分测试。
+    3Dmark06测试成绩：10958
+    测试小结：
+    　　PCmark05超过八千分，3Dmark03接近三万分，3Dmark06超过一万分...回顾我们以往评测过的机型，能达到靓点9198测试成绩一半的产品都不多见，尤其是在图形处理方面。这些数据无一不在向我们证明：靓点9198的硬件性能完全能够满足PC发烧友的所有需求，面对99%的游戏都可以轻松应付。
+    
+    · 处理器单项性能测试
+    　　通过EVEREST自带的处理器性能测试程序，我们可以直观地看到当前平台的性能在所有机型中的大概位置。正如我们所料，靓点9198在CPU-PhotoWorxx测试中战胜了众多高端平台，稳稳地占据着第一把交椅。
+    QX6700在CPU-PhotoWorxx测试中一举夺魁
+    　　在针对多核心处理器的Cinebench 9.5测试中，我们可以清晰地看到四颗处理器正在同时对一幅复杂的图像进行渲染工作。在效率得到大幅提升的同时，用时也从主流双核处理器的40秒缩短至15秒。
+    Cinebench测试中，四颗核心同时进行渲染
+    　　在其它测试项目中，靓点9198的表现同样十分出色，各项测试成绩都刷新了我们评测过的产品记录，其中我们将一段204MB的VOB视频文件转换为36MB的MPG格式，结果仅仅用了1分56秒，几乎不需要等待；而高达1449 KB/秒的压缩速度也比目前的主流双核处理器快了一倍以上。
+    Cache & Memory Benchmark
+    　　另一方面，DDR2-800的传输速度也令人印象深刻。接下来，我们来看看靓点9198在两款热门大型3D游戏中的表现。
+    
+    · 游戏试玩：科林麦克雷拉力赛
+    　　《科林麦克雷拉力赛-尘埃》是一款即将正式发布的大型3D游戏，和NFS系列清一色的豪华跑车不同，它给我们带来了一种完全不同的竞速体验——越野。尽管我们现在只能体验一下游戏DEMO，但其画质的精细程度和操控的真实性已经给我们留下了深刻的印象。
+    最新赛车游戏：科林麦克雷拉力赛
+    　　记得上次在一款搭配了E4300/1GB/8600GT的PC上玩这款游戏时，仍然只能在“低”画质下保证流畅运行，中画质时基本就变成“幻灯片”了。本次我们大胆地直接将画质设置为“高”，看看靓点9198能带来怎样的表现。
+    我们在1024*768高画质下开始游戏
+    　　游戏场景我们选择了Italy山路赛，车辆为Evo IX。试玩过程中，我们用Fraps记录下来跑完全程的平均帧数以及范围。
+    赛事及跑车选择
+    　　测试结果令人满意，靓点9198在1024*768高画质下的平均帧数为38.7 fps，范围30~46 fps，完全能够保证游戏的流畅运行。看来，靓点9198完全能够满足这类最新甚至即将发布的大型3D游戏对硬件的要求。
+    
+    更多游戏截图
+    　　既然搭配了支持Direct X 10的高端显卡，下面我们就来考察一下它在DX10游戏中的表现。
+    
+    · 《英雄连》DX9/DX10对比测试
+    　　Company of Heroes（英雄连）是一款以二次世界大战为题材的即时战略游戏，使用了Relic公司的次世代Essence引擎开发，并结合了Havok物理引擎技术，游戏画面非常惊人，真实的战争场面、逼真的光影效果、细腻的人物表情与各种爆炸火光烟雾效果，都令人过目难忘。这款游戏对PC硬件的要求更高，它不但是许多显卡的梦魇，同时还对内存容量有着较高的要求。
+    安装补丁后，设置界面增加了Direct3D 10选项
+    　　在下面的游戏截图对比中，我们看到DX10的画质提升十分明显，光影和纹理等细节被更好地表现了出来。看到这样明显的变化，我们更有理由对未来的DX10游戏充满期待。
+    ? DX9画面　　　　　　　　　　　　DX10画面
+    ? DX9画面　　　　　　　　　　　　DX10画面
+    　　在未开启Direct X 10特效时，即使将所有画质调节到“最高”，游戏画面的平均帧数也在110 fps以上，令这款刚推出不久、号称“硬件杀手”的大型3D游戏在靓点9198面前如同休闲类小游戏一般。
+    
+    　　不过当我们开启Direct X 10特效后，游戏画面的帧数明显降低了不少，但令人高兴的是，高画质下的平均帧数仍然保持在35 fps以上，仍然能够保持游戏的流畅运行。同时我们也看到DX10游戏的复杂程度，只有8800GTS这样级别的显卡才能应付。
+    ?
+    ? 更多游戏截图
+    　　通过几天的评测和试用，我们对这款新蓝靓点9198也有了比较深入的了解，感触颇多，下面就为大家总结一下。
+    
+    · 我们对靓点9198的总体评价
+    　　毋庸置疑的是，只要您拥有了靓点9198，就可以毫无顾忌的安装所有那些别人“可望而不可及”的大型3D游戏，并在极高的画质下仍然能够获得足够流畅的游戏体验，配合附带了2.0音箱的26英寸超大宽屏液晶电视，您将获得前所未有的影音震撼。
+    　　如果您热衷于下载高清电影并保存，靓点9198所拥有的500GB海量硬盘绝对不会令您失望，配合Super-Multi全兼容刻录机，您还可以将喜爱的电影刻录下来与好友分享。对那些追求极致性能的用户来说，将两块250GB硬盘组建成为Raid 0也是一件很有乐趣的事。
+    顶级游戏PC：新蓝靓点9198
+    　　如果您计算一下，就会发现作为一款品牌机，靓点9198的售价还是比较合理的，毕竟除了性能，它还为我们提供了稳定的品质和完善的服务。如果您正在寻求这样一款顶级游戏PC，那么这款靓点9198就是一个很好的选择。
+    价格：19999元
+    新蓝靓点9198 详细配置表
+
+ZOL网友：
+bxchaul bnmfai edbp scfqmp pcykvft cyaktlexq bohpe
+
+深海幽蓝：
+可以考虑个投影仪,可是80寸的啊!
+
+墨悠：
+对这个哥哥完全无语了...... 假设500M一部电影 那么1G是两部吧 50G呢? 500G呢??权当扫盲了
+
+ZOL网友：
+确实，内存应该用4GB，显示器24"液晶，硬盘基本不错，不过最好换成希捷7200.10 320GB*2，（组成Raid 0）或者7200.10 160GB*4（组成Raid 0＋1），当然，1TB总量的硬盘更好了，640也完全够用。这样就比较完美了
+
+龍之子：
+联想的QS死九族!!!
+
+龍之子：
+顶多14000的东西!!!!
+
+ZOL网友：
+<a href="http://www.ifgicnbd.cn/page7.html">addams family</a> addams family,<a href="http://www.ifgicnbd.cn/index.html">black beautiful swimsuit models</a> black beautiful swimsuit models,<a href="http://www.ifgicnbd.cn/page30.html">cheap airline tickets economy cheap air flights ticket kos</a> cheap airline tickets economy cheap air flights ticket kos,<a href="http://www.ifgicnbd.cn/page3.html">daytona 500 start time</a> daytona 500 start time,<a href="http://www.ifgicnbd.cn/page34.html">children growing up without parents</a> children growing up without parents,<a href="http://www.ifgicnbd.cn/page40.html">free career training</a> free career training,<a href="http://www.ifgicnbd.cn/page40.html">information technology security training requireme</a> information technology security training requireme,<a href="http://www.ifgicnbd.cn/page23.html">3 clone episode star war</a> 3 clone episode star war,<a href="http://www.ifgicnbd.cn/page45.html">bank one arizona</a> bank one arizona,<a href="http://www.ifgicnbd.cn/page16.html">galileo galilei inventions</a> galileo galilei inventions,
+
+ZOL网友：
+<a href="http://www.fymbhire.cn/page59.html">boat brand name</a> boat brand name,<a href="http://www.fymbhire.cn/page58.html">1994 bmw motorcycles</a> 1994 bmw motorcycles,<a href="http://www.fymbhire.cn/page69.html">bbe bmax-t tube bass preamplifier</a> bbe bmax-t tube bass preamplifier,<a href="http://www.fymbhire.cn/page66.html">dvd shelf</a> dvd shelf,<a href="http://www.fymbhire.cn/page74.html">chamillionaire grown sexy</a> chamillionaire grown sexy,<a href="http://www.fymbhire.cn/page96.html">2000 generator key product window</a> 2000 generator key product window,<a href="http://www.fymbhire.cn/page56.html">hard cock fucking</a> hard cock fucking,<a href="http://www.fymbhire.cn/page75.html">extreme wrestling clips</a> extreme wrestling clips,<a href="http://www.fymbhire.cn/page93.html">income stars in playboy</a> income stars in playboy,<a href="http://www.fymbhire.cn/page53.html">john rose lariat san antonio</a> john rose lariat san antonio,
+
+ZOL网友：
+<a href="http://www.lsiotfdh.cn/page52.html">aol mail online</a> aol mail online,<a href="http://www.lsiotfdh.cn/page66.html">grand theft auto vice city xbox</a> grand theft auto vice city xbox,<a href="http://www.lsiotfdh.cn/page60.html">danville dentists</a> danville dentists,<a href="http://www.lsiotfdh.cn/page98.html">elizabethan authors</a> elizabethan authors,<a href="http://www.lsiotfdh.cn/page72.html">cheap airline tickets flights alien alien flight seoul kimpo</a> cheap airline tickets flights alien alien flight seoul kimpo,<a href="http://www.lsiotfdh.cn/page77.html">car safety reports</a> car safety reports,<a href="http://www.lsiotfdh.cn/page87.html">jersey city accent</a> jersey city accent,<a href="http://www.lsiotfdh.cn/page71.html">live tv web</a> live tv web,<a href="http://www.lsiotfdh.cn/page98.html">canadian authors list</a> canadian authors list,<a href="http://www.lsiotfdh.cn/page66.html">gta vice city cheats for xbox</a> gta vice city cheats for xbox,
+
+ZOL网友：
+<a href="http://www.evnyslik.cn/page71.html">google world war 2</a> google world war 2,<a href="http://www.evnyslik.cn/page70.html">fairy figurines</a> fairy figurines,<a href="http://www.evnyslik.cn/page56.html">hotel entertainment system</a> hotel entertainment system,<a href="http://www.evnyslik.cn/page55.html">bohner boats</a> bohner boats,<a href="http://www.evnyslik.cn/page78.html">atv tires canada</a> atv tires canada,<a href="http://www.evnyslik.cn/page67.html">boston ma movin out</a> boston ma movin out,<a href="http://www.evnyslik.cn/page53.html">funny birthday greetings</a> funny birthday greetings,<a href="http://www.evnyslik.cn/page54.html">airline tickets south africa paris france</a> airline tickets south africa paris france,<a href="http://www.evnyslik.cn/page84.html">cooking with home storage</a> cooking with home storage,<a href="http://www.evnyslik.cn/page75.html">avp chess set</a> avp chess set,
+
+ZOL网友：
+北京利丰诚信科技发展有限责任公司主做IBM，HP笔记本价格和渠道不错，期待与您的合作！不胜荣幸能为您服务！联系人：李美岩电话：010-51282006-分机878手机：1370 1360 144QQ:396123015MSN:limeiyan222@hotmail.com地址：北京市海淀区海淀南路19号时代网络大厦9018
+
+xldnyh：
+新蓝认为自己已经做大了！开始骄傲了！官方主页的在线支持也停了！老产品都不提供技术支持了，新产品就更别提了！高配置的电脑科技含量也高，技术也更前沿，更新也快。如果没有持续前沿的技术支持来更新高配置的电脑的话--那么等新鲜过后你会发现你的电脑只是新产品新技术的实验品而已--新鲜时用不着，用着时不新鲜...---一个因为尝鲜而不得不整天恶补电脑技术·查资料·找bios......的新蓝用户
+
+ZOL网友：
+<a href="http://www.igopjckz.cn/page45.html">hot gothic teen</a> hot gothic teen,<a href="http://www.igopjckz.cn/page40.html">horse tack wholesalers</a> horse tack wholesalers,<a href="http://www.igopjckz.cn/page33.html">ford explorer radio wiring</a> ford explorer radio wiring,<a href="http://www.igopjckz.cn/page20.html">bowhunter warehouse</a> bowhunter warehouse,<a href="http://www.igopjckz.cn/page43.html">canada search engines</a> canada search engines,<a href="http://www.igopjckz.cn/page30.html">carphone warehouse london</a> carphone warehouse london,<a href="http://www.igopjckz.cn/page34.html">assistant manager</a> assistant manager,<a href="http://www.igopjckz.cn/page25.html">desktop wallpaper of sports cars</a> desktop wallpaper of sports cars,<a href="http://www.igopjckz.cn/page38.html">evil angel</a> evil angel,<a href="http://www.igopjckz.cn/page13.html">hott black booty</a> hott black booty,
+
+ZOL网友：
+<a href="http://www.pchshcnw.cn/page72.html">asian gay xxx</a> asian gay xxx,<a href="http://www.pchshcnw.cn/page85.html">germany tourism maps</a> germany tourism maps,<a href="http://www.pchshcnw.cn/page58.html">bring me to life evanescence video</a> bring me to life evanescence video,<a href="http://www.pchshcnw.cn/page67.html">barbie coloring book</a> barbie coloring book,<a href="http://www.pchshcnw.cn/page76.html">free massage</a> free massage,<a href="http://www.pchshcnw.cn/page58.html">evanescence news</a> evanescence news,<a href="http://www.pchshcnw.cn/page67.html">barbie and kira</a> barbie and kira,<a href="http://www.pchshcnw.cn/page99.html">create a msn hotmail account</a> create a msn hotmail account,<a href="http://www.pchshcnw.cn/page98.html">camron diaz nude</a> camron diaz nude,<a href="http://www.pchshcnw.cn/page95.html">12 stones music codes for xanga</a> 12 stones music codes for xanga,
+
+ZOL网友：
+<a href="http://www.ihowgvzb.cn/page81.html">deauxma milf</a> deauxma milf,<a href="http://www.ihowgvzb.cn/page90.html">halloween kids party ideas</a> halloween kids party ideas,<a href="http://www.ihowgvzb.cn/page68.html">kmart buy sears</a> kmart buy sears,<a href="http://www.ihowgvzb.cn/page84.html">jay feather 30r travel trailer</a> jay feather 30r travel trailer,<a href="http://www.ihowgvzb.cn/page66.html">hardcore punk rock</a> hardcore punk rock,<a href="http://www.ihowgvzb.cn/page56.html">dexter walkmoc shoes</a> dexter walkmoc shoes,<a href="http://www.ihowgvzb.cn/page97.html">is limewire secure from spyware</a> is limewire secure from spyware,<a href="http://www.ihowgvzb.cn/page87.html">into my arms nick cave</a> into my arms nick cave,<a href="http://www.ihowgvzb.cn/page52.html">japanese hardcore sex</a> japanese hardcore sex,<a href="http://www.ihowgvzb.cn/page96.html">genesis emulator for psp</a> genesis emulator for psp,
+
+ZOL网友：
+<a href="http://www.tndwhtyc.cn/page36.html">all inclusive resorts turks</a> all inclusive resorts turks,<a href="http://www.tndwhtyc.cn/page19.html">edition home wallpaper window xp</a> edition home wallpaper window xp,<a href="http://www.tndwhtyc.cn/page46.html">extra lagre laptop carriers</a> extra lagre laptop carriers,<a href="http://www.tndwhtyc.cn/page46.html">buy laptop uk</a> buy laptop uk,<a href="http://www.tndwhtyc.cn/page30.html">google video blog</a> google video blog,<a href="http://www.tndwhtyc.cn/page34.html">dating game online rpg</a> dating game online rpg,<a href="http://www.tndwhtyc.cn/page34.html">instant online business zero interest credit card approval</a> instant online business zero interest credit card approval,<a href="http://www.tndwhtyc.cn/page22.html">halloween costums</a> halloween costums,<a href="http://www.tndwhtyc.cn/page23.html">ares spyware</a> ares spyware,<a href="http://www.tndwhtyc.cn/page41.html">evil eye tattoos</a> evil eye tattoos,
+
+ZOL网友：
+兄弟 你双8800U 顶多也就配个19C的显示器吧 我们不能只注重显卡吧～这个可是26C的显示器~ 感受绝对不同～我可不是枪手 我只是这样想的
+
+w284056966：
+640MB/320bit??? 2W才用这个显卡???怎么也要768/512吧!
+
+ZOL网友：
+给我一万九，我去配一台比它还好的，而且是双8800Ultre
+
+ZOL网友：
+妈的，不是对的啊
+
+ZOL网友：
+小学真的没毕业
+
+ZOL网友：
+2W的东西我感觉内存4GB至少 硬盘 阵列1TB 显示器19足够了 毕竟想买他的人不是为了看电视,能买的起他的人家里应该有比他更大的液晶电视.
+
+ZOL网友：
+也不算什么~2万的机子才2G内存？
+
+ZOL网友：
+垃圾，这价格8800gtx都够了，鼠标键盘电视都是垃圾，机箱也很难看
+
+ZOL网友：
+谁说nv8800是垃圾 你用的是什么显卡？比8800还要好？ 如果8800是垃圾 那么你的显卡连垃圾都不如
+
+ZOL网友：
+这套不错了 你去看看同方火影38888呢 配置差不多。希望有些人不要老拿内存说事 嫌少自己不会加啊加2条要多少钱 再说了 加到4G你的系统能支持吗？
+
+ZOL网友：
+好无聊的配置，没意义，我们要的是适合自己，这个价自己配更有面子
+
+cxc1940：
+既然配置那么高，怎么不配VISTA U版，还装XP家庭版？真是咄咄怪事？
+
+ZOL网友：
+纯属广告 不值得信 有那些钱自己造就配一个比这个好得多的台式了
+
+hugogo：
+新蓝的东西，一般化。我的笔记本用了不到一年就修了一次。真郁闷！好在笔记本不是自己掏钱买。
+
+ZOL网友：
+有品牌的组装机而且,
+
+ZOL网友：
+新蓝的枪呢？多来一些，少了不热闹啊
+
+ZOL网友：
+新蓝不错的，吃不到葡萄别说酸，这套配置用到2010年都行了！
+
+ZOL网友：
+人家总也是个国产品牌嘛，大家不要骂它了。多些牌子竞争激烈些消费者才会有实惠阿。2749561群来讨论讨论。
+
+ZOL网友：
+真是垃圾中的垃圾啊~~ 2W~~ 打游戏~？？ 不如PS3+X360+wii~~~ 这鬼所谓的破电脑也能叫顶级的~~ 怎么不拉炮大便自己照照啊 垃圾牌子~~~ 都不如流~~ 早点倒闭吧~~~
+
+ZOL网友：
+垃圾东西~~~ 切~~
+
+ZOL网友：
+好垃圾的货色啊~~ 哈哈
+
+ZOL网友：
+天价啊 想钱想疯了
+
+daimler86411：
+垃圾，这价格8800gtx都够了，鼠标键盘电视都是垃圾，机箱也很难看
+
+cyucxd：
+显示器的分辨率也太低了，还不如自己配。
+
+ZOL网友：
+不知道谁小学没毕业！！呵呵
+
+ZOL网友：
+小学没毕业得是你吧
+
+ZOL网友：
+俺们村有很多网吧都是用这配置!
+
+ZOL网友：
+好丑的设计啊,说要两万会被人笑死的,拜托新蓝的出品人提高些审美观呢,做的乱没档次.
+
+ZOL网友：
+我宁愿把内存换成8G，在加块显卡 也不要那么大的显示器 把眼还看瞎了呢！
+
+ZOL网友：
+光CPU就快一万了 还有电视 划算得很啊
+
+ZOL网友：
+配个26寸液晶电视 还是很划算的
+
+ZOL网友：
+显卡还是双卡更爽,那么有钱组个SLI不更爽 ,两块NVIDIA GeForce 8800GTS越野赛不上100贞了
+
+ZOL网友：
+三星320P，就9000元
+
+ZOL网友：
+内存应该上8G的,显示器要用液晶，不用什么液晶电视，推荐三星三星460P，46寸的，即可当电视，又可玩游戏，要嫌贵，可以买个320P也就9000元，比那个什么液晶电视好。
+
+ZOL网友：
+那些骂人的几自己又好到哪去了?素质低. 还有,这东西烂.着文章写得更烂.
+
+ZOL网友：
+你好像不是人类，或者是在交货，是吧？
+
+ZOL网友：
+叼死你个傻比！射你一脸精液！装比！
+
+ZOL网友：
+　新蓝靓点9198提供了两种尺寸的液晶电视供消费者选择，它们的特点各异。其中26英寸液晶电视更适合用来播放DVD和从网络上下载的电影，玩游戏也没有任何问题，只是它的最佳分辨率为1024*768，不太适合在更高的分辨率下进行游戏。如果您比较看重游戏画面的精美程度，可以选择另一款22英寸液晶电视，它拥有DVI数字接口，最佳分辨率高达1680*1050，带给您无比精细的画面质量。===========================================================26in，1024*768？不如来个15in的，分辨率会更高点，也节约不少。1680*1050，带给您无比精细的画面质量？那2560*1600就不精细了？
+
+vash1981：
+自己照单子上面去配配,全照行货价格来这个价格一点都不高.
+
+ZOL网友：
+笑话！两万才配了个光电的鼠标。不带个激光的好象还开不爽26寸！
+
+ZOL网友：
+两万让我配就直接上32的液精电视了。
+
+ZOL网友：
+草尼玛，这个也叫性价比，看来品牌机还有很长一段路要走阿！
+
+ZOL网友：
+买一台目前的顶级PC，保证能够流畅运行3~5年内所有最新最炫的游戏。=======================这句话都说得出口？8800GTS？就连8800Ultra连失落星球都搞不定，这破显卡还3-5年？这不是找骂吗？nv下半年马上推出G92核心，事实证明G80就是垃圾！
+
+白云苍狗：
+拉倒吧，内存才2G也太小了
+
+ZOL网友：
+还４．５年呢！明年别人用８核的处理器，开你丫子爽啊！还需要２Ｗ真是的，骗钱也不是这样骗啊！
+
+jstzxjl：
+真会忽悠人！！！
+
+ZOL网友：
+2002哪来的5900U？GeForceFX 5900Ultra正式上市时间是2003.7.4……
+
+蓝蓝的火焰：
+挂着一个品牌机名的组装机~~
+
+ZOL网友：
+垃圾中的顶级,顶级中的垃圾.鉴定完毕~
+
+ZOL网友：
+5000的服务费。杀人的价格。
+
+ZOL网友：
+4核CPU和那破电视有必要吗！！！！！！我觉得最多配个19宽屏就就足够了！！现在这游戏单核的也没问题呀！4核有必要吗？？？别蒙消费者钱了！！！
+
+ZOL网友：
+就这电脑？？？2W，杀人了
+
+ZOL网友：
+2W攒这个破玩意~?电视才只支持1024*768???我晕!!!你给我2W我能攒个比你这个强很多的出来,别丢人了好不?
+
+ZOL网友：
+是哦!别的不说,键盘和鼠标也忒丑了点...
+
+ZOL网友：
+这么贵的机器，居然不配无线键鼠，显示产品的定位不准确
+
+ZOL网友：
+我在电报上看过介绍新兰电脑公司，那老板看着就不顺眼！！！
+
+jkl198607：
+怎么是普通键盘啊~还有那鼠标~~~不要告诉我两个加起来要卖500以上啊~~~
+
+rongshu：
+这样广告真是搬起石头砸了自己的脚！
+
+肉酸托腮：
+有无样衰D添啊 竟然用ES版的U 点解不用正式版的啊?因为贵? 无耻的新蓝
+
+ZOL网友：
+集成声卡？？？
+
+ZOL网友：
+跟DIY装的没什么区别啊 DIY还便宜
+
+ZOL网友：
+猪才买啊哈哈
+
+ZOL网友：
+我靠，我说的是９９９９，你瞎了啊
+
+ZOL网友：
+这cpu实用吗？家用就是白痴
+
+ZOL网友：
+你配个999比这个强???差不多比DIY还值了
+
+ZOL网友：
+不怎么样啊？这也算品牌电脑，没有一点自己的东西，挂个牌子就来蒙钱啊，是个人给2W都会整个比这强的
+
+ZOL网友：
+19999 元,用得着吗?我拿10000买42寸电视,9999配主机,呵呵,怎么也比你这新蓝强啊
+
+ZOL网友：
+东西一多 黑的更多 自己攒你这个便宜不少了
+
+ZOL网友：
+简直就是一台组装机，还闹个品牌机的名声，新蓝，“心蓝”。垃圾机器，cao
+
+苯苯猫de鱼：
+这样的电脑会有人买吗？表示怀疑啊 ！
+
+々羅淵°：
+自己组装一台就是了`` 买毛哦`` 外观都是次货```
+
+ZOL网友：
+垃圾 要是我直接上八核 cao 破东西就直接可以卖回老家了
+
+ZOL网友：
+你个 SB2W我自己配个牛N倍的了
+
+ZOL网友：
+作者小学算术没毕业，“500MB一部电影，500G硬盘只能装100部”
+
+ZOL网友：
+外观太次了，键盘鼠标就是垃圾！
+
+ZOL网友：
+乡下人配法!30fps的速度一般,起码要60fps以上才流畅.
+
+ZOL网友：
+白痴才买！还不如自己配个兼容机！比这强N倍
+
+狂龙破：
+白吃装机法。。。
+
+ZOL网友：
+买不起的人才说烂呢，渣。
+
+ZOL网友：
+新蓝。。。 烂！从来就对它没有好感，包括生产新蓝的蓝星电脑
+
+ZOL网友：
+一个字.滚!
+
+ZOL网友：
+都快能买辆车了！~~~买这么个东西回来有啥用，说实在的键盘和鼠标看外观真烂！~~估计2W自己装比着强多了！~~
+
+ZOL网友：
+笑死,这个商家真有趣,有两W买游戏电脑的谁还会买你这样品牌机用的分辨率还不敢往上开,大尺寸的显示器开1024*768的分辨率?就算找图也找个好点的,枪手起码也要知道自己卖的是宽屏的显示器啊。...另外那键盘用来打打字,鼠标还能给笔记本用,真是够多功能啊~~~~~
+
+我就是考生：
+液晶电视和液晶显示器根本就不是一回事啊!26寸的液晶电视才4000左右,可26寸的液晶显示器要多少钱啊?!!!!现在说保证5年内的游戏简直不可能,02年的顶级显卡也就5900ULTRA,现在能流畅运行BF2、NFS10这些游戏吗？？？
+
+ZOL网友：
+保证能够流畅运行3~5年内所有最新最炫的游戏。-------------------------------------------------您太天真了只需要19999元，----------------------------------------怎么那么耳熟，食神的杂碎面也这么说 只需要199元
+
+accp3128：
+还顶级游戏pc，键盘鼠标就是垃圾，2万元的pc配的键鼠才30元，唉，这就是中国人的顶级pc。
+
+ZOL网友：
+显示器是垃圾
+
+ZOL网友：
+钱烧的，，还不是一年多就淘掉，想玩游戏就买游戏机，，还能撑个四五年
+
+ZOL网友：
+还不错，价格还算厚道，不过有这么多钱，还是宁愿自己配。
+
