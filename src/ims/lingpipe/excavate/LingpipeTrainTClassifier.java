@@ -14,6 +14,11 @@ import com.aliasi.tokenizer.TokenFeatureExtractor;
 import com.aliasi.util.AbstractExternalizable;
 import com.aliasi.util.Files;
 
+/**
+ * 
+ * @author superhy
+ * 
+ */
 public class LingpipeTrainTClassifier {
 
 	// 训练语料的文件夹
@@ -82,6 +87,7 @@ public class LingpipeTrainTClassifier {
 	public void classifyText(String classifierName) {
 
 		try {
+			// 从本地磁盘加载二进制分类器文件
 			File classifierFile = new File("./file/lingpipe_classifier/"
 					+ classifierName + ".lp");
 
@@ -96,10 +102,12 @@ public class LingpipeTrainTClassifier {
 						+ file.getName());
 				Classification classification = compiledClassifier
 						.classify(text);
+				// 得出最佳分类的结果
 				String bestCategory = classification.bestCategory();
 
 				System.out.println("最佳分类：" + bestCategory);
 
+				// 得出分类操作的细节
 				String details = classification.toString();
 
 				System.out.println("分类细节：\n" + details);
