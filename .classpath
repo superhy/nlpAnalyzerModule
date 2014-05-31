@@ -15,5 +15,6 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/lucene/tika-app-1.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/weka/weka.jar" sourcepath="C:/Users/Shen/Desktop/iiimms/support/weka/weka-src.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/lingpipe/lingpipe-4.1.0.jar" sourcepath="C:/Users/Shen/Desktop/iiimms/support/lingpipe/lingpipe-4.1.0/src"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/weka/libsvm.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
