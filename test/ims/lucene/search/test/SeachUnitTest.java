@@ -1,7 +1,7 @@
 package ims.lucene.search.test;
 
 import ims.lucene.analyzer.DiyAnalyzerWithSynonym;
-import ims.lucene.analyzer.impl.TestSynonymContextImpl;
+import ims.lucene.analyzer.impl.SimpleSynonymContextImpl;
 import ims.lucene.search.SearchUnit;
 
 import java.util.Scanner;
@@ -139,7 +139,7 @@ public class SeachUnitTest {
 		try {
 
 			QueryParser parser = new QueryParser(Version.LUCENE_35, "content",
-					new DiyAnalyzerWithSynonym(new TestSynonymContextImpl()));
+					new DiyAnalyzerWithSynonym(new SimpleSynonymContextImpl()));
 
 			Scanner cin = new Scanner(System.in);
 			String keyWord = cin.next();

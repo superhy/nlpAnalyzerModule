@@ -1,7 +1,7 @@
 package ims.lucene.index;
 
 import ims.lucene.analyzer.DiyAnalyzerWithSynonym;
-import ims.lucene.analyzer.impl.TestSynonymContextImpl;
+import ims.lucene.analyzer.impl.SimpleSynonymContextImpl;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -174,7 +174,7 @@ public class IndexUnit {
 		try {
 			// 创建IndexWriter
 			IndexWriterConfig iwc = new IndexWriterConfig(Version.LUCENE_35,
-					new DiyAnalyzerWithSynonym(new TestSynonymContextImpl()));
+					new DiyAnalyzerWithSynonym(new SimpleSynonymContextImpl()));
 			writer = new IndexWriter(directory, iwc);
 
 			// 创建Documnet
