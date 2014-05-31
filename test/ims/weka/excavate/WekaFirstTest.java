@@ -1,5 +1,7 @@
 package ims.weka.excavate;
 
+import ims.weka.classifier.WekaFirst;
+
 import org.junit.Test;
 
 public class WekaFirstTest {

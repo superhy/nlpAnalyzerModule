@@ -1,21 +1,24 @@
 package ims.lingpipe.excavate;
 
+import ims.lingpipe.classifier.LingpipeClassifyText;
+import ims.lingpipe.classifier.LingpipeTrainKnnClassifier;
+
 import org.junit.Test;
 
 public class LingpipeTrainTClassifierTest {
 
 	@Test
 	public void testTrainClasssifer() {
-		LingpipeTrainTClassifier tClassifierObj = new LingpipeTrainTClassifier();
+		LingpipeTrainKnnClassifier tClassifierObj = new LingpipeTrainKnnClassifier();
 
 		tClassifierObj.trainKnnClassifier();
 	}
 
 	@Test
 	public void testClassifyTest() {
-		LingpipeTrainTClassifier tClassifierObj = new LingpipeTrainTClassifier();
+		LingpipeClassifyText classifyTextObj = new LingpipeClassifyText();
 
 		String classifierName = "KnnClassifier";
-		tClassifierObj.classifyText(classifierName);
+		classifyTextObj.classifyText(classifierName);
 	}
 }
