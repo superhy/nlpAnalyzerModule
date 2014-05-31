@@ -64,6 +64,12 @@ public class LingpipeTrainTClassifier {
 			// 把分类器模型写到文件上
 			System.out.println("开始生成分类器");
 			String modelFile = "./file/lingpipe_classifier/KnnClassifier.lp";
+
+			// 如果目录中没有对应文件，创建之
+			if (!(new File(modelFile)).exists()) {
+				(new File(modelFile)).createNewFile();
+			}
+
 			ObjectOutputStream os = new ObjectOutputStream(
 					new FileOutputStream(modelFile));
 			classifierTrainer.compileTo(os);
