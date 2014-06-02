@@ -25,6 +25,7 @@ package ims.weka.classifier;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Enumeration;
@@ -74,9 +75,11 @@ import weka.core.converters.Loader;
  * 
  * Based on code from the TextDirectoryToArff tool:
  * <ul>
- * <li><a href="https://list.scms.waikato.ac.nz/mailman/htdig/wekalist/2002-October/000685.html"
+ * <li><a href=
+ * "https://list.scms.waikato.ac.nz/mailman/htdig/wekalist/2002-October/000685.html"
  * target="_blank">Original tool</a></li>
- * <li><a href="https://list.scms.waikato.ac.nz/mailman/htdig/wekalist/2004-January/002160.html"
+ * <li><a href=
+ * "https://list.scms.waikato.ac.nz/mailman/htdig/wekalist/2004-January/002160.html"
  * target="_blank">Current version</a></li>
  * <li><a href="http://weka.wikispaces.com/ARFF+files+from+Text+Collections"
  * target="_blank">Wiki article</a></li>
@@ -473,9 +476,17 @@ public class DiyTextDirectoryLoader extends AbstractLoader implements
 					}
 
 					StringBuffer txtStr = new StringBuffer();
-					int c;
+					/*int c;
 					while ((c = is.read()) != -1) {
 						txtStr.append((char) c);
+					}*/
+
+					// 自定义修改源代码
+					FileReader fr = new FileReader(txt);
+					BufferedReader br = new BufferedReader(fr);
+					String line;
+					while ((line = br.readLine()) != null) {
+						txtStr.append(line + "\n");
 					}
 
 					newInst[0] = (double) data.attribute(0).addStringValue(
