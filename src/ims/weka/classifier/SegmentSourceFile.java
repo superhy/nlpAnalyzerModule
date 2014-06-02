@@ -14,18 +14,18 @@ import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import com.chenlb.mmseg4j.analysis.MMSegAnalyzer;
 
 /**
- * 本文件用于将训练文件分词过后存入其他的文件夹中
+ * 本文件用于将训练文件分词过后存入其他的文件夹中;step:01
  * 
  * @author superhy
  * 
  */
-public class TrainFileSegmenter {
+public class SegmentSourceFile {
 
 	// 设置源地址和汇地址
 	private String sourceDir;
 	private String targetDir;
 
-	public TrainFileSegmenter(String sourceDir, String targetDir) {
+	public SegmentSourceFile(String sourceDir, String targetDir) {
 		super();
 		this.sourceDir = sourceDir;
 		this.targetDir = targetDir;
