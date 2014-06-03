@@ -32,6 +32,9 @@ public class UseClassifierModel {
 		this.modelPath = modelPath;
 	}
 
+	/**
+	 * 创建arff文件
+	 */
 	public void createArffSource() {
 		// 对源文件进行分词并存储在本地磁盘
 		SegmentSourceFile segmentSourceFile = new SegmentSourceFile(
@@ -44,12 +47,18 @@ public class UseClassifierModel {
 				this.dataRawPath, this.dataFilterPath);
 	}
 
+	/**
+	 * 在有arff文件的情况下训练分类模型
+	 */
 	public void trainClassifierModelWithArff() {
 		SaveLoadingClassifierModel saveLoadingClassifierModel = new SaveLoadingClassifierModel();
 		saveLoadingClassifierModel.sericalizingModel(this.dataArffPath,
 				this.modelPath);
 	}
 
+	/**
+	 * 在没有arff文件的情况下训练分类模型
+	 */
 	public void trainClassifierModelWithoutArff() {
 
 		this.createArffSource();

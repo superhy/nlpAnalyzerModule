@@ -15,6 +15,10 @@ public class SaveLoadingClassifierModel {
 	 */
 	public void sericalizingModel(String dataArffPath, String modelPath) {
 		try {
+
+			// TODO delete print
+			System.out.println("正在建立分类模型");
+
 			// 新建分类模型
 			Classifier classifier = new IBk(5);
 
@@ -28,6 +32,10 @@ public class SaveLoadingClassifierModel {
 
 			// 序列化写入分类器
 			SerializationHelper.write(modelPath, classifier);
+
+			// TODO delete print
+			System.out.println("建立分类模型成功");
+
 		} catch (Exception e) {
 			// TODO: handle exception
 
@@ -40,8 +48,15 @@ public class SaveLoadingClassifierModel {
 	 */
 	public Classifier deserializingModel(String modelPath) {
 		try {
+
+			// TODO delete print
+			System.out.println("正在加载分类模型");
+
 			Classifier classifier = (Classifier) SerializationHelper
 					.read(modelPath);
+
+			// TODO delete print
+			System.out.println("加载文类模型成功");
 
 			// 返回加在得出的classifier
 			return classifier;

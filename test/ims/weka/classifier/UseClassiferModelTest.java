@@ -33,6 +33,16 @@ public class UseClassiferModelTest {
 		this.useClassifierModel.createArffSource();
 	}
 
+	@Test
+	public void testTrainClassifierModelWithArff() {
+		this.useClassifierModel.trainClassifierModelWithArff();
+	}
+
+	@Test
+	public void testTrainClassifierModelWithoutArff() {
+		this.useClassifierModel.trainClassifierModelWithoutArff();
+	}
+
 	public UseClassifierModel getUseClassifierModel() {
 		return useClassifierModel;
 	}
