@@ -31,8 +31,11 @@ public class SegmentSourceFile {
 		this.targetDir = targetDir;
 	}
 
-	public void trainFileSegment() {
+	public void analyzeFileSegment() {
 		segmentDir(this.sourceDir, this.targetDir);
+
+		// TODO delete print
+		System.out.println("分词结束");
 	}
 
 	public void segmentDir(String source, String target) {
@@ -68,6 +71,9 @@ public class SegmentSourceFile {
 			FileWriter fw = new FileWriter(targetFile);
 			BufferedWriter bw = new BufferedWriter(fw);
 
+			// TODO delete print
+			System.out.println("正在分词:" + sourceFile);
+
 			// 使用lucene分词并创建字节流
 			// 使用的分词器是mmseg4j
 			Analyzer mmsegAnalyzer = new MMSegAnalyzer();
@@ -77,11 +83,11 @@ public class SegmentSourceFile {
 
 			while (tokenStream.incrementToken()) {
 				bw.write(termAttribute.buffer());
-				bw.write(' ');
+				bw.write(" ");
 			}
 
-			fw.close();
 			bw.close();
+			fw.close();
 
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -89,4 +95,21 @@ public class SegmentSourceFile {
 		}
 
 	}
+
+	public String getSourceDir() {
+		return sourceDir;
+	}
+
+	public void setSourceDir(String sourceDir) {
+		this.sourceDir = sourceDir;
+	}
+
+	public String getTargetDir() {
+		return targetDir;
+	}
+
+	public void setTargetDir(String targetDir) {
+		this.targetDir = targetDir;
+	}
+
 }

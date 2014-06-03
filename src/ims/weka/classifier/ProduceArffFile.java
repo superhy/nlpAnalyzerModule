@@ -17,15 +17,15 @@ import weka.filters.unsupervised.attribute.StringToWordVector;
  */
 public class ProduceArffFile {
 
-	public void produceArffFile(String analyzerContentPath, String dateRawPath,
-			String dateFilteredPath) {
+	public void produceArffFile(String analyzedContentPath, String dataRawPath,
+			String dataFilteredPath) {
 		try {
 
 			DiyTextDirectoryLoader loader = new DiyTextDirectoryLoader();
-			loader.setDirectory(new File(analyzerContentPath));
+			loader.setDirectory(new File(analyzedContentPath));
 			Instances dateRaw = loader.getDataSet();
 			{
-				FileWriter fw = new FileWriter(dateRawPath);
+				FileWriter fw = new FileWriter(dataRawPath);
 				BufferedWriter bw = new BufferedWriter(fw);
 
 				bw.write(dateRaw.toString());
@@ -39,7 +39,7 @@ public class ProduceArffFile {
 			filter.setInputFormat(dateRaw);
 			Instances dataFiltered = Filter.useFilter(dateRaw, filter);
 			{
-				FileWriter fw = new FileWriter(dateFilteredPath);
+				FileWriter fw = new FileWriter(dataFilteredPath);
 				BufferedWriter bw = new BufferedWriter(fw);
 
 				bw.write(dataFiltered.toString());
