@@ -14,15 +14,15 @@ import com.mongodb.DBObject;
  */
 public class TransMongoContent {
 
-	public Map<String, Object> producePostIndexContent(DBObject postObject,
-			String collectionName) {
+	public static Map<String, Object> producePostIndexContent(
+			DBObject postObject, String collectionName) {
 
 		// 准备返回的节点内容映射集合（为创建索引使用）
 		Map<String, Object> postIndexContentMap = new HashMap<String, Object>();
 
 		postIndexContentMap.put("collectionName", collectionName);
-		postIndexContentMap.put("postUrlMD5", (String) postObject
-				.get("postUrlMD5"));
+		postIndexContentMap.put("postUrlMD5",
+				(String) postObject.get("postUrlMD5"));
 
 		// 将节点中所有的文字内容转化成字符串
 		String postAllContent = "";
