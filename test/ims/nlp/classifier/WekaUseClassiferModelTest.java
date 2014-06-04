@@ -14,14 +14,14 @@ public class WekaUseClassiferModelTest {
 		// 设置各种路径
 
 		// directory
-		String segmentSourceDir = "./file/train_content";
-		String segmentTargetDir = "./file/weka/analyzed_content";
-		String analyzedContentPath = "./file/weka/analyzed_content";
+		String segmentSourceDir = "./file/nlp_train_content";
+		String segmentTargetDir = "./file/nlp_weka/analyzed_content";
+		String analyzedContentPath = "./file/nlp_weka/analyzed_content";
 		// file
-		String dataRawPath = "./file/weka/arff/dataRaw.arff";
-		String dataFilterPath = "./file/weka/arff/dataFilter.arff";
-		String dataArffPath = "./file/weka/arff/dataFilter.arff";
-		String modelPath = "./file/weka/model/KnnClassifier.model";
+		String dataRawPath = "./file/nlp_weka/arff/dataRaw.arff";
+		String dataFilterPath = "./file/nlp_weka/arff/dataFilter.arff";
+		String dataArffPath = "./file/nlp_weka/arff/dataFilter.arff";
+		String modelPath = "./file/nlp_weka/model/KnnClassifier.model";
 
 		WekaUseClassifierModel useClassifierModel = new WekaUseClassifierModel(
 				segmentSourceDir, segmentTargetDir, analyzedContentPath,

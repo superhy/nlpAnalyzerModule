@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<!-- 自动扫描命名类包 
+	<typeAliases>
+		<package name="ims.site.model" />
+		<package name="ims.crawlerLog.model"/>
+	</typeAliases>
+
+	 将mapper文件加入到配置文件中 
+	<mappers>
+		<mapper resource="ims/site/dao/SiteCategoryMapper.xml" />
+		<mapper resource="ims/site/dao/ExtraParameMapper.xml" />
+		<mapper resource="ims/site/dao/FetchPagerObjMapper.xml" />
+		<mapper resource="ims/site/dao/FetchParameMapper.xml" />
+		<mapper resource="ims/site/dao/GrabParameMapper.xml" />
+		<mapper resource="ims/site/dao/GrabUserParameMapper.xml" />
+		<mapper resource="ims/site/dao/PostMapper.xml" />
+		<mapper resource="ims/site/dao/SiteMapper.xml" />
+		<mapper resource="ims/site/dao/ThemeMapper.xml" />
+		<mapper resource="ims/site/dao/ToolMapper.xml" />
+		<mapper resource="ims/crawlerLog/dao/SiteLogMapper.xml" />
+		<mapper resource="ims/crawlerLog/dao/TaskLogMapper.xml" />
+		<mapper resource="ims/crawlerLog/dao/ThemeLogMapper.xml" />
+	</mappers>-->
+	
+	
+
+</configuration>

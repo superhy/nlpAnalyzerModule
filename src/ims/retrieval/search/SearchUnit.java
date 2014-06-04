@@ -30,7 +30,7 @@ public class SearchUnit {
 
 	public SearchUnit() {
 		try {
-			directory = FSDirectory.open(new File("./file/index"));
+			directory = FSDirectory.open(new File("./file/lucene_test_index"));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
