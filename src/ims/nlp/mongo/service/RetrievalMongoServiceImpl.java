@@ -7,7 +7,6 @@ import java.util.Set;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBObject;
-import com.sun.org.apache.regexp.internal.recompile;
 
 /**
  * 

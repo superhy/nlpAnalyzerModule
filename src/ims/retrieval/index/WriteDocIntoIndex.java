@@ -1,7 +1,11 @@
 package ims.retrieval.index;
 
+import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -24,20 +28,37 @@ public class WriteDocIntoIndex {
 
 	private Directory directory = null;
 
+	// 单例模式，静态内部类
+	private static class WriterIndexHolder {
+		private static final WriteDocIntoIndex WRITE_INDEX = new WriteDocIntoIndex();
+	}
+
 	/**
 	 * 构造方法直接初始化索引
 	 * 
 	 * @param indexPath
 	 */
-	public WriteDocIntoIndex(String indexPath) {
+	public WriteDocIntoIndex() {
 
 		try {
+
+			InputStream ins = new BufferedInputStream(new FileInputStream(
+					"./src/index-path.properties"));
+
+			Properties p = new Properties();
+			p.load(ins);
+
 			// 创建索引到硬盘当中
-			this.directory = FSDirectory.open(new File(indexPath));
+			this.directory = FSDirectory.open(new File(p
+					.getProperty("lucene_all_index")));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public static final WriteDocIntoIndex getWriteDocIntoIndex() {
+		return WriterIndexHolder.WRITE_INDEX;
 	}
 
 	public synchronized void writerSinglePostIntoIndex(String content,
