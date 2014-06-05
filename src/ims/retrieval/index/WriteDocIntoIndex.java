@@ -26,19 +26,14 @@ import com.chenlb.mmseg4j.analysis.MMSegAnalyzer;
  */
 public class WriteDocIntoIndex {
 
-	private Directory directory = null;
-
-	// 单例模式，静态内部类
-	private static class WriterIndexHolder {
-		private static final WriteDocIntoIndex WRITE_INDEX = new WriteDocIntoIndex();
-	}
-
 	/**
-	 * 构造方法直接初始化索引
+	 * 初始化索引目录
 	 * 
 	 * @param indexPath
 	 */
-	public WriteDocIntoIndex() {
+	public static Directory createDirectory(String luceneAllIndexPath) {
+
+		Directory directory = null;
 
 		try {
 
@@ -49,20 +44,20 @@ public class WriteDocIntoIndex {
 			p.load(ins);
 
 			// 创建索引到硬盘当中
-			this.directory = FSDirectory.open(new File(p
-					.getProperty("lucene_all_index")));
+			directory = FSDirectory.open(new File(p
+					.getProperty(luceneAllIndexPath)));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
+		return directory;
 	}
 
-	public static final WriteDocIntoIndex getWriteDocIntoIndex() {
-		return WriterIndexHolder.WRITE_INDEX;
-	}
+	public synchronized static void writerSinglePostIntoIndex(String content,
+			String collectionName, String postUrlMD5, String luceneAllIndexPath) {
 
-	public synchronized void writerSinglePostIntoIndex(String content,
-			String collectionName, String postUrlMD5) {
+		Directory directory = createDirectory(luceneAllIndexPath);
 
 		IndexWriter writer = null;
 
@@ -71,7 +66,7 @@ public class WriteDocIntoIndex {
 			MMSegAnalyzer mmSegAnalyzer = new MMSegAnalyzer(); // 使用mmseg中文分词器
 			IndexWriterConfig iwc = new IndexWriterConfig(Version.LUCENE_35,
 					mmSegAnalyzer);
-			writer = new IndexWriter(this.directory, iwc);
+			writer = new IndexWriter(directory, iwc);
 
 			// 创建document
 			Document document = new Document();

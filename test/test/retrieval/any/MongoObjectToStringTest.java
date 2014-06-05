@@ -2,7 +2,7 @@ package test.retrieval.any;
 
 import java.util.List;
 
-import ims.nlp.mongo.MongoDbBean;
+import ims.analyze.mongo.MongoDbBean;
 
 import org.junit.Test;
 

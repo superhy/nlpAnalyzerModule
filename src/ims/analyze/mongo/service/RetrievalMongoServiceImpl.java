@@ -1,6 +1,6 @@
-package ims.nlp.mongo.service;
+package ims.analyze.mongo.service;
 
-import ims.nlp.mongo.MongoDbBean;
+import ims.analyze.mongo.MongoDbBean;
 
 import java.util.List;
 import java.util.Set;

@@ -1,7 +1,7 @@
 package ims.retrieval.index;
 
-import ims.nlp.cache.ApplicationContextFactory;
-import ims.nlp.mongo.service.RetrievalMongoService;
+import ims.analyze.cache.ApplicationContextFactory;
+import ims.analyze.mongo.service.RetrievalMongoService;
 import ims.retrieval.util.TransMongoContent;
 
 import java.util.List;
@@ -20,11 +20,16 @@ import com.mongodb.DBObject;
  */
 public class InitContentIndexThread implements Callable<Boolean> {
 
+	// 这个线程所执行创建索引分任务的集合名称
 	private String collectionName;
+	// 索引所建的地址查询参数
+	private String luceneAllIndexPath;
 
-	public InitContentIndexThread(String collectionName) {
+	public InitContentIndexThread(String collectionName,
+			String luceneAllIndexPath) {
 		super();
 		this.collectionName = collectionName;
+		this.luceneAllIndexPath = luceneAllIndexPath;
 	}
 
 	/**
@@ -64,17 +69,15 @@ public class InitContentIndexThread implements Callable<Boolean> {
 	 * @return
 	 */
 	public boolean writePostIntoIndex(Map<String, Object> postIndexContentMap) {
-		WriteDocIntoIndex writeDocIntoIndex = WriteDocIntoIndex
-				.getWriteDocIntoIndex();
 
 		String content = (String) postIndexContentMap.get("content");
 		String collectionName = (String) postIndexContentMap
-				.get("collectionName");		
+				.get("collectionName");
 		String postUrlMD5 = (String) postIndexContentMap.get("postUrlMD5");
 
 		try {
-			writeDocIntoIndex.writerSinglePostIntoIndex(content,
-					collectionName, postUrlMD5);
+			WriteDocIntoIndex.writerSinglePostIntoIndex(content,
+					collectionName, postUrlMD5, this.luceneAllIndexPath);
 
 			return true;
 		} catch (Exception e) {
@@ -113,6 +116,14 @@ public class InitContentIndexThread implements Callable<Boolean> {
 
 	public void setCollectionName(String collectionName) {
 		this.collectionName = collectionName;
+	}
+
+	public String getLuceneAllIndexPath() {
+		return luceneAllIndexPath;
+	}
+
+	public void setLuceneAllIndexPath(String luceneAllIndexPath) {
+		this.luceneAllIndexPath = luceneAllIndexPath;
 	}
 
 }

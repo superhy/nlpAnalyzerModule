@@ -1,4 +1,4 @@
-package ims.nlp.mongo.service;
+package ims.analyze.mongo.service;
 
 public class NlpMongoServiceImpl {
 

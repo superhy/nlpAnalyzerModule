@@ -1,4 +1,4 @@
-package ims.nlp.mongo;
+package ims.analyze.mongo;
 
 import java.net.UnknownHostException;
 import java.util.ArrayList;

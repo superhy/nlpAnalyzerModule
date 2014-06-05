@@ -1,6 +1,7 @@
 package ims.retrieval.index;
 
-import ims.nlp.mongo.service.RetrievalMongoService;
+import ims.analyze.cache.IndexDirectoryLoc;
+import ims.analyze.mongo.service.RetrievalMongoService;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -41,7 +42,7 @@ public class InitAllContentIndex {
 		// 为每一个集合提交一个线程任务
 		for (String collectionName : getCollectionsName()) {
 			InitContentIndexThread initContentIndexThread = new InitContentIndexThread(
-					collectionName);
+					collectionName, IndexDirectoryLoc.LUCENE_ALL_INDEX);
 
 			setThreads.add(exes.submit(initContentIndexThread));
 		}

@@ -1,6 +1,6 @@
 package test.retrieval.index;
 
-import ims.nlp.cache.ApplicationContextFactory;
+import ims.analyze.cache.ApplicationContextFactory;
 import ims.retrieval.index.InitAllContentIndex;
 
 public class InitAllContentIndexTest {

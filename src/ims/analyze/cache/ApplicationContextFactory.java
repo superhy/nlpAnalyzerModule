@@ -1,4 +1,4 @@
-package ims.nlp.cache;
+package ims.analyze.cache;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

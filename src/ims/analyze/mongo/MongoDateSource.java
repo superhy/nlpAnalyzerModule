@@ -1,4 +1,4 @@
-package ims.nlp.mongo;
+package ims.analyze.mongo;
 
 import java.io.File;
 import java.util.HashMap;

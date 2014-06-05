@@ -1,4 +1,4 @@
-package ims.nlp.mongo.service;
+package ims.analyze.mongo.service;
 
 import java.util.List;
 import java.util.Set;

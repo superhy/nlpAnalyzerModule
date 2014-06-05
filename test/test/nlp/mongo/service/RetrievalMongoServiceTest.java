@@ -2,8 +2,8 @@ package test.nlp.mongo.service;
 
 import java.util.Set;
 
-import ims.nlp.cache.ApplicationContextFactory;
-import ims.nlp.mongo.service.RetrievalMongoService;
+import ims.analyze.cache.ApplicationContextFactory;
+import ims.analyze.mongo.service.RetrievalMongoService;
 
 import org.junit.Test;
 
