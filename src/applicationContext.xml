@@ -38,4 +38,7 @@
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>
 
+	<!-- 引入retrieval检索模块配置文件 -->
+	<import resource="struts_spring_xml/retrievalContext.xml" />
+
 </beans>

@@ -1,4 +1,4 @@
-package ims.retrieval.any;
+package test.retrieval.any;
 
 import java.util.List;
 

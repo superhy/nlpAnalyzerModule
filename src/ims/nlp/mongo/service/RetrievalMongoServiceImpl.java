@@ -13,7 +13,7 @@ import com.mongodb.DBObject;
  * @author superhy
  * 
  */
-public class RetrievalMongoServiceImpl {
+public class RetrievalMongoServiceImpl implements RetrievalMongoService {
 
 	/**
 	 * 得到所有的集合名称
@@ -21,9 +21,11 @@ public class RetrievalMongoServiceImpl {
 	 * @return
 	 */
 	public Set<String> findAllCollectionsName() {
-
 		MongoDbBean mongoDbBean = MongoDbBean.getMongoDbBean();
 		Set<String> collectionsName = mongoDbBean.getCollectionNames();
+
+		// 去掉system.indexes这个无用的集合
+		collectionsName.remove("system.indexes");
 
 		return collectionsName;
 	}

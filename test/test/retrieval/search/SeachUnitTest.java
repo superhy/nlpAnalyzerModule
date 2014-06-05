@@ -1,4 +1,4 @@
-package ims.retrieval.search.test;
+package test.retrieval.search;
 
 import ims.retrieval.analyzer.DiyAnalyzerWithSynonym;
 import ims.retrieval.analyzer.impl.SimpleSynonymContextImpl;

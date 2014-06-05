@@ -1,4 +1,4 @@
-package ims.nlp.classifier;
+package test.nlp.classifier;
 
 import ims.nlp.classifier.LingpipeClassifyText;
 import ims.nlp.classifier.LingpipeTrainKnnClassifier;

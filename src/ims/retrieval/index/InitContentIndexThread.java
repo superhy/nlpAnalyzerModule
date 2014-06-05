@@ -20,8 +20,6 @@ import com.mongodb.DBObject;
  */
 public class InitContentIndexThread implements Callable<Boolean> {
 
-	// TODO 添加注释
-
 	private String collectionName;
 
 	public InitContentIndexThread(String collectionName) {
@@ -29,6 +27,11 @@ public class InitContentIndexThread implements Callable<Boolean> {
 		this.collectionName = collectionName;
 	}
 
+	/**
+	 * 得到某个集合当中所有的节点对象
+	 * 
+	 * @return
+	 */
 	public List<DBObject> getPostsInColl() {
 
 		ApplicationContext appContext = ApplicationContextFactory.appContext;
@@ -41,6 +44,12 @@ public class InitContentIndexThread implements Callable<Boolean> {
 		return postObjects;
 	}
 
+	/**
+	 * 将每个节点对象转化成建立索引需要的映射集合
+	 * 
+	 * @param postObject
+	 * @return
+	 */
 	public Map<String, Object> transPostContent(DBObject postObject) {
 		Map<String, Object> postIndexContentMap = TransMongoContent
 				.producePostIndexContent(postObject, this.collectionName);
@@ -48,13 +57,19 @@ public class InitContentIndexThread implements Callable<Boolean> {
 		return postIndexContentMap;
 	}
 
+	/**
+	 * 将每一个节点写入索引，并返回是否成功
+	 * 
+	 * @param postIndexContentMap
+	 * @return
+	 */
 	public boolean writePostIntoIndex(Map<String, Object> postIndexContentMap) {
 		WriteDocIntoIndex writeDocIntoIndex = WriteDocIntoIndex
 				.getWriteDocIntoIndex();
 
 		String content = (String) postIndexContentMap.get("content");
 		String collectionName = (String) postIndexContentMap
-				.get("collectionName");
+				.get("collectionName");		
 		String postUrlMD5 = (String) postIndexContentMap.get("postUrlMD5");
 
 		try {
@@ -88,6 +103,7 @@ public class InitContentIndexThread implements Callable<Boolean> {
 			}
 		}
 
+		// 返回是否全部成功
 		return succFlag;
 	}
 
