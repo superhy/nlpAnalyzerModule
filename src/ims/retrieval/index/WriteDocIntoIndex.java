@@ -31,7 +31,7 @@ public class WriteDocIntoIndex {
 	 * 
 	 * @param indexPath
 	 */
-	public static Directory createDirectory(String luceneAllIndexPath) {
+	public static Directory createDirectory(String IndexPath) {
 
 		Directory directory = null;
 
@@ -45,7 +45,7 @@ public class WriteDocIntoIndex {
 
 			// 创建索引到硬盘当中
 			directory = FSDirectory.open(new File(p
-					.getProperty(luceneAllIndexPath)));
+					.getProperty(IndexPath)));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -55,9 +55,9 @@ public class WriteDocIntoIndex {
 	}
 
 	public synchronized static void writerSinglePostIntoIndex(String content,
-			String collectionName, String postUrlMD5, String luceneAllIndexPath) {
+			String collectionName, String postUrlMD5, String IndexPath) {
 
-		Directory directory = createDirectory(luceneAllIndexPath);
+		Directory directory = createDirectory(IndexPath);
 
 		IndexWriter writer = null;
 
