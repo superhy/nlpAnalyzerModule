@@ -5,6 +5,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 
 import org.apache.lucene.document.Document;
@@ -70,13 +74,17 @@ public class SearchInLocalContent {
 	}
 
 	/**
-	 * 短语查询,field为查询的域值,value为查询的关键字,num为查询的数量
+	 * 模糊布尔查询,field为查询的域值,value为查询的关键字,num为查询的数量
 	 * 
 	 * @param field
 	 * @param value
 	 * @param num
+	 * @return
 	 */
-	public void phraseQuerySearcher(String value, int num) {
+	public List<Map<String, Object>> phraseQuerySearcher(String value, int num) {
+
+		// 准备查询返回结果
+		List<Map<String, Object>> searchResults = new ArrayList<Map<String, Object>>();
 
 		try {
 
@@ -90,7 +98,10 @@ public class SearchInLocalContent {
 			// 设定布尔操作为"或"操作(默认，但为了显示清晰)
 			parser.setDefaultOperator(QueryParser.OR_OPERATOR);
 			// 创建query表示搜索域为content包含制定的文档，使用短语查询
-			Query query = parser.parse("\"" + value + "\"");
+			Query query = parser.parse(value);
+
+			// TODO delete print
+			System.out.println(query.toString());
 
 			// 根据seacher搜索并且返回TopDocs
 			TopDocs tds = searcher.search(query, num);
@@ -102,9 +113,15 @@ public class SearchInLocalContent {
 				// 根据seacher和ScoreDoc对象获取具体的Documnet对象
 				Document d = searcher.doc(sd.doc);
 
-				// 根据Documnet对象获取需要的值
+				// TODO delete print 根据Documnet对象获取需要的值
 				System.out.println(d.get("collectionName") + "["
 						+ d.get("postUrlMD5") + "]");
+
+				// 装载查询返回结果
+				Map<String, Object> searchResultMap = new HashMap<String, Object>();
+				searchResultMap.put("collectionName", d.get("collectionName"));
+				searchResultMap.put("postUrlMD5", d.get("postUrlMD5"));
+				searchResults.add(searchResultMap);
 			}
 
 			// 关闭reader
@@ -117,5 +134,7 @@ public class SearchInLocalContent {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
+		return searchResults;
 	}
 }
