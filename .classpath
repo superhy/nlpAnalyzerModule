@@ -18,6 +18,7 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/weka/libsvm.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mongo/mongo-2.10.1.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jaxen-1.1-beta-6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mahout/mahout-core-0.9.jar" sourcepath="C:/Users/Shen/.m2/repository/org/apache/mahout/mahout-core/0.9/mahout-core-0.9-sources.jar"/>
 	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_CORE"/>
 	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_Persistence_JDBC"/>
 	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.lib.spring3.MYECLIPSE_SPRING30_Persistence_CORE"/>

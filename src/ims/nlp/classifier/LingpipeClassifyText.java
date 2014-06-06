@@ -16,7 +16,7 @@ public class LingpipeClassifyText {
 	
 		try {
 			// 从本地磁盘加载二进制分类器文件
-			File classifierFile = new File("./file/nlp_lingpipe_classifier/"
+			File classifierFile = new File("./file/nlp_lingpipe/classifier/"
 					+ classifierName + ".lp");
 	
 			KnnClassifier<CharSequence> compiledClassifier = (KnnClassifier<CharSequence>) AbstractExternalizable

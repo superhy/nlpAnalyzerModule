@@ -1,16 +1,17 @@
 package ims.retrieval.search;
 
+import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.CorruptIndexException;
 import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.Term;
 import org.apache.lucene.queryParser.ParseException;
 import org.apache.lucene.queryParser.QueryParser;
-import org.apache.lucene.search.FuzzyQuery;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
@@ -29,7 +30,14 @@ public class SearchInLocalContent {
 	public SearchInLocalContent(String indexPath) {
 		super();
 		try {
-			this.directory = FSDirectory.open(new File(indexPath));
+			InputStream ins = new BufferedInputStream(new FileInputStream(
+					"./src/index-path.properties"));
+
+			Properties p = new Properties();
+			p.load(ins);
+
+			// 创建索引到硬盘当中
+			directory = FSDirectory.open(new File(p.getProperty(indexPath)));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -82,7 +90,7 @@ public class SearchInLocalContent {
 			// 设定布尔操作为"或"操作(默认，但为了显示清晰)
 			parser.setDefaultOperator(QueryParser.OR_OPERATOR);
 			// 创建query表示搜索域为content包含制定的文档，使用短语查询
-			Query query = parser.parse("\"" + "value" + "\"");
+			Query query = parser.parse("\"" + value + "\"");
 
 			// 根据seacher搜索并且返回TopDocs
 			TopDocs tds = searcher.search(query, num);
@@ -95,8 +103,8 @@ public class SearchInLocalContent {
 				Document d = searcher.doc(sd.doc);
 
 				// 根据Documnet对象获取需要的值
-				System.out.println(d.get("filename") + "["
-						+ d.get("filelocation") + "]");
+				System.out.println(d.get("collectionName") + "["
+						+ d.get("postUrlMD5") + "]");
 			}
 
 			// 关闭reader
