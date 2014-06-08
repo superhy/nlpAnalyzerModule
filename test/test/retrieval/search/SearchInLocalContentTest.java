@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+import ims.analyze.cache.IndexDirectoryLoc;
 import ims.retrieval.search.SearchInLocalContent;
 
 import org.junit.Test;
@@ -13,7 +14,7 @@ public class SearchInLocalContentTest {
 	@Test
 	public void testPhraseQuerySearcher() {
 		SearchInLocalContent searchInLocalContent = new SearchInLocalContent(
-				"lucene_all_index");
+				IndexDirectoryLoc.LUCENE_ALL_INDEX);
 
 		String keyValue = new Scanner(System.in).next();
 		List<Map<String, Object>> resMaps = searchInLocalContent

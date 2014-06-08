@@ -1,6 +1,7 @@
 package test.retrieval.index;
 
 import ims.analyze.cache.ApplicationContextFactory;
+import ims.analyze.cache.IndexDirectoryLoc;
 import ims.retrieval.index.InitAllContentIndex;
 
 public class InitAllContentIndexTest {
@@ -24,7 +25,8 @@ public class InitAllContentIndexTest {
 		// 记录开始时间
 		long startTime = System.currentTimeMillis();
 
-		initAllContentIndex.execCreateIndexThread();
+		initAllContentIndex
+				.execCreateIndexThread(IndexDirectoryLoc.LUCENE_ALL_INDEX);
 
 		// 记录结束时间
 		long endTime = System.currentTimeMillis();

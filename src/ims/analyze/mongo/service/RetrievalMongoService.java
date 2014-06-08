@@ -13,7 +13,7 @@ public interface RetrievalMongoService {
 	 * @return
 	 */
 	public Set<String> findAllCollectionsName();
-	
+
 	/**
 	 * 得到指定集合中所有的post节点
 	 * 
@@ -21,4 +21,14 @@ public interface RetrievalMongoService {
 	 * @return
 	 */
 	public List<DBObject> findAllPostInColl(String collectionName);
+
+	/**
+	 * 得到指定集合中属于特定任务的post节点
+	 * 
+	 * @param taskLogId
+	 * @param collectionName
+	 * @return
+	 */
+	public List<DBObject> findPostInCollByTasklogId(String taskLogId,
+			String collectionName);
 }

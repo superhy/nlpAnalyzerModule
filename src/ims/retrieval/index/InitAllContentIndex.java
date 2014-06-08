@@ -1,6 +1,5 @@
 package ims.retrieval.index;
 
-import ims.analyze.cache.IndexDirectoryLoc;
 import ims.analyze.mongo.service.RetrievalMongoService;
 
 import java.util.HashSet;
@@ -31,18 +30,19 @@ public class InitAllContentIndex {
 	/**
 	 * 执行线程写入索引
 	 */
-	public boolean execCreateIndexThread() {
+	public boolean execCreateIndexThread(String indexAllContentPath) {
 
 		// 首先获得所有集合的名称
 		this.getAllCollections();
 
+		// 建立线程池
 		ExecutorService exes = Executors.newCachedThreadPool();
 		Set<Future<Boolean>> setThreads = new HashSet<Future<Boolean>>();
 
 		// 为每一个集合提交一个线程任务
 		for (String collectionName : getCollectionsName()) {
 			InitContentIndexThread initContentIndexThread = new InitContentIndexThread(
-					collectionName, IndexDirectoryLoc.LUCENE_ALL_INDEX);
+					collectionName, indexAllContentPath);
 
 			setThreads.add(exes.submit(initContentIndexThread));
 		}
