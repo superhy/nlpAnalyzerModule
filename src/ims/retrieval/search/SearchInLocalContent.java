@@ -1,16 +1,13 @@
 package ims.retrieval.search;
 
-import java.io.BufferedInputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Properties;
 
+import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.CorruptIndexException;
 import org.apache.lucene.index.IndexReader;
@@ -24,8 +21,6 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
 
-import com.chenlb.mmseg4j.analysis.MMSegAnalyzer;
-
 public class SearchInLocalContent {
 
 	private Directory directory;
@@ -34,14 +29,9 @@ public class SearchInLocalContent {
 	public SearchInLocalContent(String indexPath) {
 		super();
 		try {
-			InputStream ins = new BufferedInputStream(new FileInputStream(
-					"./src/index-path.properties"));
-
-			Properties p = new Properties();
-			p.load(ins);
 
 			// 创建索引到硬盘当中
-			directory = FSDirectory.open(new File(p.getProperty(indexPath)));
+			directory = FSDirectory.open(new File(indexPath));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -81,7 +71,8 @@ public class SearchInLocalContent {
 	 * @param num
 	 * @return
 	 */
-	public List<Map<String, Object>> phraseQuerySearcher(String value, int num) {
+	public List<Map<String, Object>> phraseQuerySearcher(String value, int num,
+			Analyzer analyzer) {
 
 		// 准备查询返回结果
 		List<Map<String, Object>> searchResults = new ArrayList<Map<String, Object>>();
@@ -91,10 +82,12 @@ public class SearchInLocalContent {
 			// 根据IndexReader创建IndexSeacher
 			IndexSearcher searcher = getSearcher();
 
+			// TODO 将来需要从数据库传入停用词，形成停用词队列
+
 			// 创建搜索的Query
 			// 创建parser来确定搜索内容，第二个参数表示搜索的域，最后一个参数表示所使用的分词器
 			QueryParser parser = new QueryParser(Version.LUCENE_35, "content",
-					new MMSegAnalyzer());
+					analyzer);
 			// 设定布尔操作为"或"操作(默认，但为了显示清晰)
 			parser.setDefaultOperator(QueryParser.OR_OPERATOR);
 			// 创建query表示搜索域为content包含制定的文档，使用短语查询
@@ -114,8 +107,8 @@ public class SearchInLocalContent {
 				Document d = searcher.doc(sd.doc);
 
 				// TODO delete print 根据Documnet对象获取需要的值
-				System.out.println(d.get("collectionName") + "["
-						+ d.get("postUrlMD5") + "]");
+				// System.out.println(d.get("collectionName") + "["
+				// + d.get("postUrlMD5") + "]");
 
 				// 装载查询返回结果
 				Map<String, Object> searchResultMap = new HashMap<String, Object>();

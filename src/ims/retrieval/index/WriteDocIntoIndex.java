@@ -1,11 +1,7 @@
 package ims.retrieval.index;
 
-import java.io.BufferedInputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
 
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -31,21 +27,14 @@ public class WriteDocIntoIndex {
 	 * 
 	 * @param indexPath
 	 */
-	public static Directory createDirectory(String indexPath) {
+	public static Directory loadDirectory(String indexPath) {
 
 		Directory directory = null;
 
 		try {
 
-			InputStream ins = new BufferedInputStream(new FileInputStream(
-					"./src/index-path.properties"));
-
-			Properties p = new Properties();
-			p.load(ins);
-
 			// 创建索引到硬盘当中
-			directory = FSDirectory.open(new File(p
-					.getProperty(indexPath)));
+			directory = FSDirectory.open(new File(indexPath));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -55,9 +44,9 @@ public class WriteDocIntoIndex {
 	}
 
 	public synchronized static void writerSinglePostIntoIndex(String content,
-			String collectionName, String postUrlMD5, String IndexPath) {
+			String collectionName, String postUrlMD5, String indexPath) {
 
-		Directory directory = createDirectory(IndexPath);
+		Directory directory = loadDirectory(indexPath);
 
 		IndexWriter writer = null;
 
