@@ -2,7 +2,7 @@ package test.nlp.any;
 
 import java.util.List;
 
-import ims.nlp.cache.ApplicationContextFactory;
+import ims.crawler.cache.ApplicationContextFactory;
 import ims.nlp.mongo.service.RetrievalMongoService;
 
 import org.junit.Test;

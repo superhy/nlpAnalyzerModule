@@ -3,6 +3,7 @@ package ims.nlp.lucene.index;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.index.CorruptIndexException;
@@ -44,7 +45,7 @@ public class WriteDocIntoIndex {
 	}
 
 	public synchronized static void writerSinglePostIntoIndex(String content,
-			String collectionName, String postUrlMD5, String indexPath) {
+			String collectionName, String postUrlMD5, String indexPath, Analyzer analyzer) {
 
 		Directory directory = loadDirectory(indexPath);
 
@@ -52,9 +53,8 @@ public class WriteDocIntoIndex {
 
 		try {
 			// 创建indexWriter
-			MMSegAnalyzer mmSegAnalyzer = new MMSegAnalyzer(); // 使用mmseg中文分词器
 			IndexWriterConfig iwc = new IndexWriterConfig(Version.LUCENE_35,
-					mmSegAnalyzer);
+					analyzer);
 			writer = new IndexWriter(directory, iwc);
 
 			// 创建document

@@ -9,6 +9,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import org.apache.lucene.analysis.Analyzer;
+
 /**
  * 
  * @author superhy
@@ -32,7 +34,7 @@ public class AddNewContentIndex {
 	 * @return
 	 */
 	public boolean execAddContentIndexThread(String taskLogId,
-			String indexAllContentPath) {
+			String indexAllContentPath, Analyzer analyzer) {
 
 		// 首先获得所有集合的名称
 		this.getAllCollections();
@@ -44,7 +46,7 @@ public class AddNewContentIndex {
 		// 为每一个集合提交一个线程任务
 		for (String collectionName : getCollectionsName()) {
 			AddNewContentIndexThread addNewContentIndexThread = new AddNewContentIndexThread(
-					taskLogId, collectionName, indexAllContentPath);
+					taskLogId, collectionName, analyzer, indexAllContentPath);
 
 			setThreads.add(exes.submit(addNewContentIndexThread));
 		}

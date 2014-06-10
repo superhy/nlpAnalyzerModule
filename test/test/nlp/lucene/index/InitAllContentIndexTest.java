@@ -1,7 +1,10 @@
 package test.nlp.lucene.index;
 
-import ims.nlp.cache.ApplicationContextFactory;
+import org.apache.lucene.analysis.Analyzer;
+
+import ims.crawler.cache.ApplicationContextFactory;
 import ims.nlp.cache.IndexDirectoryLoc;
+import ims.nlp.lucene.analyzer.detial.MmsegAnalyzerDetialUtil;
 import ims.nlp.lucene.index.InitAllContentIndex;
 
 public class InitAllContentIndexTest {
@@ -25,8 +28,9 @@ public class InitAllContentIndexTest {
 		// 记录开始时间
 		long startTime = System.currentTimeMillis();
 
-		initAllContentIndex
-				.execCreateIndexThread(IndexDirectoryLoc.LUCENE_ALL_INDEX);
+		Analyzer analyzer = new MmsegAnalyzerDetialUtil(null);
+		initAllContentIndex.execCreateIndexThread(
+				IndexDirectoryLoc.LUCENE_ALL_INDEX, analyzer);
 
 		// 记录结束时间
 		long endTime = System.currentTimeMillis();

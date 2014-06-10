@@ -1,6 +1,6 @@
 package ims.nlp.lucene.index;
 
-import ims.nlp.cache.ApplicationContextFactory;
+import ims.crawler.cache.ApplicationContextFactory;
 import ims.nlp.lucene.util.TransMongoContentForIndex;
 import ims.nlp.mongo.service.RetrievalMongoService;
 
@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
+import org.apache.lucene.analysis.Analyzer;
 import org.springframework.context.ApplicationContext;
 
 import com.mongodb.DBObject;
@@ -18,15 +19,18 @@ public class AddNewContentIndexThread implements Callable<Boolean> {
 	private String taskLogId;
 	// 对应的集合名称
 	private String collectionName;
+	// 所选用的分词器
+	private Analyzer analyzer;
 
 	// 索引所建的地址查询参数
 	private String indexAllContentPath;
 
 	public AddNewContentIndexThread(String taskLogId, String collectionName,
-			String indexAllContentPath) {
+			Analyzer analyzer, String indexAllContentPath) {
 		super();
 		this.taskLogId = taskLogId;
 		this.collectionName = collectionName;
+		this.analyzer = analyzer;
 		this.indexAllContentPath = indexAllContentPath;
 	}
 
@@ -75,7 +79,8 @@ public class AddNewContentIndexThread implements Callable<Boolean> {
 
 		try {
 			WriteDocIntoIndex.writerSinglePostIntoIndex(content,
-					collectionName, postUrlMD5, this.indexAllContentPath);
+					collectionName, postUrlMD5, this.indexAllContentPath,
+					this.analyzer);
 
 			return true;
 		} catch (Exception e) {

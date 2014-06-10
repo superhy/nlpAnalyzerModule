@@ -9,6 +9,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import org.apache.lucene.analysis.Analyzer;
+
 /**
  * 初始创建原始库中所有内容的索引
  * 
@@ -30,7 +32,8 @@ public class InitAllContentIndex {
 	/**
 	 * 执行线程写入索引
 	 */
-	public boolean execCreateIndexThread(String indexAllContentPath) {
+	public boolean execCreateIndexThread(String indexAllContentPath,
+			Analyzer analyzer) {
 
 		// 首先获得所有集合的名称
 		this.getAllCollections();
@@ -42,7 +45,7 @@ public class InitAllContentIndex {
 		// 为每一个集合提交一个线程任务
 		for (String collectionName : getCollectionsName()) {
 			InitContentIndexThread initContentIndexThread = new InitContentIndexThread(
-					collectionName, indexAllContentPath);
+					collectionName, analyzer, indexAllContentPath);
 
 			setThreads.add(exes.submit(initContentIndexThread));
 		}
