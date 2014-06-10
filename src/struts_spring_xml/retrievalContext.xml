@@ -13,10 +13,10 @@
 	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
 	<!-- 创建mongoService实体 -->
-	<bean id="retrievalMongoService" class="ims.analyze.mongo.service.RetrievalMongoServiceImpl">
+	<bean id="retrievalMongoService" class="ims.nlp.mongo.service.RetrievalMongoServiceImpl">
 	</bean>
 
-	<bean id="initAllContentIndex" class="ims.retrieval.index.InitAllContentIndex">
+	<bean id="initAllContentIndex" class="ims.nlp.lucene.index.InitAllContentIndex">
 		<property name="retrievalMongoService" ref="retrievalMongoService"></property>
 	</bean>
 

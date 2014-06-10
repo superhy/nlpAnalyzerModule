@@ -1,6 +1,5 @@
 package ims.nlp.lucene.util;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,70 +14,43 @@ import com.mongodb.DBObject;
  */
 public class TransMongoContentForIndex {
 
-	public static List<Map<String, Object>> producePostIndexContent(
-			DBObject postObject, String collectionNameStr) {
+	public static Map<String, Object> producePostIndexContent(
+			DBObject postObject, String collectionName) {
 
-		// 准备返回的数据
-		List<Map<String, Object>> nodeMapList = new ArrayList<Map<String, Object>>();
+		// 准备返回的节点内容映射集合（为创建索引使用）
+		Map<String, Object> postIndexContentMap = new HashMap<String, Object>();
 
-		// 获取节点的各种基本信息
-		String collectionName = collectionNameStr;
-		String postUrlMD5 = (String) postObject.get("postUrlMD5");
+		postIndexContentMap.put("collectionName", collectionName);
+		postIndexContentMap.put("postUrlMD5",
+				(String) postObject.get("postUrlMD5"));
 
-		// 标题算入每个article的信息
-		String title = (String) postObject.get("title");
-
+		// 将节点中所有的文字内容转化成字符串
+		String postAllContent = "";
+		postAllContent += ((String) postObject.get("title") + "\r\n");
+		// 得到这个节点中所有的article
 		List<DBObject> articleList = (List<DBObject>) postObject.get("article");
-		for (DBObject articleObject : articleList) {
+		if (articleList != null) {
+			for (DBObject articleObject : articleList) {
+				String articleContent = (String) articleObject
+						.get("articleContent");
+				postAllContent += (articleContent + "\r\n");
 
-			if (articleObject.get("articleContent") == null) {
-				continue;
-			}
-
-			// article语料点信息
-			String articleNodeFlag = "article";
-			String articleNodeId = (String) articleObject.get("articleId");
-			String articleNodeContent = title
-					+ (String) articleObject.get("articleContent");
-
-			// 将article语料点信息装入map容器
-			Map<String, Object> articleNodeMap = new HashMap<String, Object>();
-			articleNodeMap.put("collectionName", collectionName);
-			articleNodeMap.put("postUrlMD5", postUrlMD5);
-			articleNodeMap.put("nodeFlag", articleNodeFlag);
-			articleNodeMap.put("nodeId", articleNodeId);
-			articleNodeMap.put("nodeContent", articleNodeContent);
-
-			nodeMapList.add(articleNodeMap);
-
-			// 获得article下面所有的reply语料点信息
-			List<DBObject> replyList = articleObject.get("articleReply") != null ? (List<DBObject>) articleObject
-					.get("articleReply")
-					: new ArrayList<DBObject>();
-			for (DBObject replyObject : replyList) {
-
-				if (replyObject.get("replyContent") == null) {
+				// 得到一个article中所有的reply元素
+				List<DBObject> replyList = (List<DBObject>) articleObject
+						.get("articleReply");
+				if (replyList == null) {
 					continue;
 				}
-
-				// reply语料点信息
-				String replyNodeFlag = "reply";
-				String replyNodeId = (String) replyObject.get("replyId");
-				String replyNodeContent = (String) replyObject
-						.get("replyContent");
-
-				// 将reply语料点信息装入map容器
-				Map<String, Object> replyNodeMap = new HashMap<String, Object>();
-				replyNodeMap.put("collectionName", collectionName);
-				replyNodeMap.put("postUrlMD5", postUrlMD5);
-				replyNodeMap.put("nodeFlag", replyNodeFlag);
-				replyNodeMap.put("nodeId", replyNodeId);
-				replyNodeMap.put("nodeContent", replyNodeContent);
-
-				nodeMapList.add(replyNodeMap);
+				for (DBObject replyObject : replyList) {
+					String replyContent = (String) replyObject
+							.get("replyContent");
+					postAllContent += (replyContent + "r\\n");
+				}
 			}
 		}
+		// 将postAllContent添加入节点内容映射集合
+		postIndexContentMap.put("content", postAllContent);
 
-		return nodeMapList;
+		return postIndexContentMap;
 	}
 }

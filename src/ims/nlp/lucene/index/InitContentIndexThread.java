@@ -55,33 +55,30 @@ public class InitContentIndexThread implements Callable<Boolean> {
 	 * @param postObject
 	 * @return
 	 */
-	public List<Map<String, Object>> transPostContent(DBObject postObject) {
-		List<Map<String, Object>> postIndexContentMapList = TransMongoContentForIndex
+	public Map<String, Object> transPostContent(DBObject postObject) {
+		Map<String, Object> postIndexContentMap = TransMongoContentForIndex
 				.producePostIndexContent(postObject, this.collectionName);
 
-		return postIndexContentMapList;
+		return postIndexContentMap;
 	}
 
 	/**
 	 * 将每一个节点写入索引，并返回是否成功
 	 * 
-	 * @param nodeIndexContentMap
+	 * @param postIndexContentMap
 	 * @return
 	 */
-	public boolean writePostIntoIndex(Map<String, Object> nodeIndexContentMap) {
+	public boolean writePostIntoIndex(Map<String, Object> postIndexContentMap) {
 
 		// 取出需要建立索引的域值
-		String collectionName = (String) nodeIndexContentMap
+		String content = (String) postIndexContentMap.get("content");
+		String collectionName = (String) postIndexContentMap
 				.get("collectionName");
-		String postUrlMD5 = (String) nodeIndexContentMap.get("postUrlMD5");
-		String nodeFlag = (String) nodeIndexContentMap.get("nodeFlag");
-		String nodeId = (String) nodeIndexContentMap.get("nodeId");
-		String nodeContent = (String) nodeIndexContentMap.get("nodeContent");
+		String postUrlMD5 = (String) postIndexContentMap.get("postUrlMD5");
 
 		try {
-			WriteDocIntoIndex.writerSinglePostIntoIndex(collectionName,
-					postUrlMD5, nodeFlag, nodeId, nodeContent,
-					this.indexAllContentPath);
+			WriteDocIntoIndex.writerSinglePostIntoIndex(content,
+					collectionName, postUrlMD5, this.indexAllContentPath);
 
 			return true;
 		} catch (Exception e) {
@@ -100,16 +97,13 @@ public class InitContentIndexThread implements Callable<Boolean> {
 		List<DBObject> postObjects = this.getPostsInColl();
 
 		for (DBObject postObject : postObjects) {
-			List<Map<String, Object>> postIndexContentMapList = this
+			Map<String, Object> postIndexContentMap = this
 					.transPostContent(postObject);
 
-			// 为每一个post节点中的每一个语料点(article or reply)建立索引
-			for (Map<String, Object> nodeIndexContentMap : postIndexContentMapList) {
-				Boolean singleSuccFlag = this
-						.writePostIntoIndex(nodeIndexContentMap);
-				if (singleSuccFlag == false) {
-					succFlag = false;
-				}
+			Boolean singleSuccFlag = this
+					.writePostIntoIndex(postIndexContentMap);
+			if (singleSuccFlag == false) {
+				succFlag = false;
 			}
 		}
 

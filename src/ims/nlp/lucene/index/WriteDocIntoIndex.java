@@ -43,9 +43,8 @@ public class WriteDocIntoIndex {
 		return directory;
 	}
 
-	public synchronized static void writerSinglePostIntoIndex(
-			String collectionName, String postUrlMD5, String nodeFlag,
-			String nodeId, String nodeContent, String indexPath) {
+	public synchronized static void writerSinglePostIntoIndex(String content,
+			String collectionName, String postUrlMD5, String indexPath) {
 
 		Directory directory = loadDirectory(indexPath);
 
@@ -65,16 +64,12 @@ public class WriteDocIntoIndex {
 			System.out.println("正在创建索引：" + collectionName + " " + postUrlMD5);
 
 			// 向document中添加域值，设置是否存储和是否分词
+			document.add(new Field("content", content, Field.Store.NO,
+					Field.Index.ANALYZED));
 			document.add(new Field("collectionName", collectionName,
 					Field.Store.YES, Field.Index.NOT_ANALYZED));
 			document.add(new Field("postUrlMD5", postUrlMD5, Field.Store.YES,
 					Field.Index.NOT_ANALYZED));
-			document.add(new Field("nodeFlag", nodeFlag, Field.Store.YES,
-					Field.Index.NOT_ANALYZED));
-			document.add(new Field("nodeId", nodeId, Field.Store.YES,
-					Field.Index.NOT_ANALYZED));
-			document.add(new Field("nodeContent", nodeContent, Field.Store.NO,
-					Field.Index.ANALYZED));
 
 			// 通过IndexWriter添加文档到索引中
 			writer.addDocument(document);
