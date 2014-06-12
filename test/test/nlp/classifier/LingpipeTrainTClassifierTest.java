@@ -1,7 +1,7 @@
 package test.nlp.classifier;
 
-import ims.nlp.classifier.LingpipeClassifyText;
-import ims.nlp.classifier.LingpipeTrainKnnClassifier;
+import ims.nlp.classifier.lingpipe.LingpipeClassifyText;
+import ims.nlp.classifier.lingpipe.LingpipeTrainKnnClassifier;
 
 import org.junit.Test;
 

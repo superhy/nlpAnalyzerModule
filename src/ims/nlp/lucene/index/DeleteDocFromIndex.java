@@ -38,6 +38,45 @@ public class DeleteDocFromIndex {
 	}
 
 	/**
+	 * 清空索引中所有的文档
+	 * 
+	 * @param indexPath
+	 * @param analyzer
+	 */
+	public synchronized static void clearAllIndex(String indexPath,
+			Analyzer analyzer) {
+
+		IndexWriter writer = null;
+
+		try {
+			Directory directory = loadDirectory(indexPath);
+			IndexWriterConfig iwc = new IndexWriterConfig(Version.LUCENE_35,
+					analyzer);
+			writer = new IndexWriter(directory, iwc);
+
+			writer.deleteAll();
+		} catch (CorruptIndexException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (LockObtainFailedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				if (writer != null)
+					writer.close();
+			} catch (CorruptIndexException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+	/**
 	 * 删除索引中的文档到回收站
 	 * 
 	 * @param postUrlMD5
