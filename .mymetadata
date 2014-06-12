@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="iiimmsAnalyzerModule"
+  name="iiimmsNLPerModule"
   id="myeclipse.1391679686706"
   context-root="/luceneTest"
   j2ee-spec="5.0"
-  archive="iiimmsAnalyzerModule.war">
+  archive="iiimmsNLPerModule.war">
   <attributes>
     <attribute name="webrootdir" value="WebRoot" />
   </attributes>
